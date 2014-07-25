@@ -2,220 +2,182 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+* {margin: 0; padding: 0; outline: 0;}
+
+
 body {
-  background-color: #f2f2f2;
-  color: #000;
-  font-family: arial-black, arial, helvetica, sans-serif;
-  line-height: 18px;
+	font-family: Helvetica, Arial, Verdana, sans-serif;
+	color: #e5e5e5;
+	font-size: 12px;
+	background:#bfbfbf;
+
+	
 }
 
 
-
-.header{
-height: 50px;
-width: 100%;
-color: #000;
-background-color: #929292;
-position: fixed;
-top: 0%;
-left: 0%;
+h1, h2 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	margin:0 0 15px 0;
 }
 
-p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
-  line-height: 18px;
+
+h1 {
+	font-size: 36px;
+	letter-spacing: -1px;
+	line-height: 100%;
 }
 
-pre {
-  background-color: #eee;
-  padding: 10px;
-  font-size: 11px;
+
+h2 {
+	font-size: 24px;
+}
+
+
+p {
+	margin: 0 0 15px 0;
 }
 
 a {
-	color: #000;
-  	text-decoration:none;
-  
-  	&:visited {
-    color: #000;
-  }
-}
-
-a:hover{
-  	color: #fff;
-  	-moz-transition:0.2s ease-in-out;
-	-o-transition:0.2s ease-in-out;
-	-webkit-transition:all 0.2s ease-in-out;
- }
-
-div {
-	&.field, &.messages {
-	font-family: verdana, arial, helvetica, sans-serif;
-  	font-size: 10px;
-  	line-height: 18px;
-  	}
-}
-
-#menu, #menu ul {
-	margin: 0;
-  	padding: 0;
-  	list-style: none;
-}
-
-#left {
-  	width: 25%;
-  	height: 10%;
-  	margin: 0px 0px 10px auto;
-  	background-color: #929292;
-  	float:left;
-  	text-align: center;
-  	}
-
-#menu {
-  	width: 75%;
-  	height: 10%;
-  	margin: 0px auto;
-  	background-color: #929292;
-  	float:right;
+	color: #3e3e3e;
 }
 
 
-#menu a {
-  	float: right;
-  	padding: 15px 20px;
-  	color: #000;
-  	text-transform: uppercase;
-  	font: bold 16px arial-black, Helvetica;
-  	text-decoration: none;
+
+.clear {
+	clear: both;
 }
-
-#menu li:hover > a {
-  	color: #fff;
-}
-
-img{
-	height:75px;
-	width:75px;
-	-moz-border-radius: 100%;
-	-webkit-border-radius: 100%;
-	border-radius: 100%; 
-	-khtml-border-radius: 100%; 
-	}
-
-#image {
-	position: fixed;
-	margin-left: 20px;
-	align:left;
-}
-
-
-#section1 { 
-	background-color: #ff6a6a;
-	color: #000;
-	position: relative;
-	top:50px;
-	height: 500px;
-	width: 85%;
-	font-family:"Arial Black", Gadget, sans-serif;
-	font-size:24px;
-	z-index: -1;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	border-radius: 10px; 
-	-khtml-border-radius: 10px; 
-
-	}
-
-#section2 { 
-	background-color: #86c986;
-	color: #000;
-	position: relative;
-	top: 200px;
-	height: 500px;
-	width: 85%;
-	font-family:"Arial Black", Gadget, sans-serif;
-	font-size:24px;
-	z-index: -1;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	border-radius: 10px; 
-	-khtml-border-radius: 10px; 
-	}
-
-#section3 { 
-	background-color: #87ceeb;
-	color: #000;
-	position: relative;
-	top: 300px;
-	height: 500px;
-	width: 85%;
-	font-family:"Arial Black", Gadget, sans-serif;
-	font-size:24px;
-	z-index: -1;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	border-radius: 10px; 
-	-khtml-border-radius: 10px; 
-	}
-
-#section4 { 
-	background-color: #f8f884;
-	color: #000;
-	position: relative;
-	top: 400px;
-	height: 500px;
-	width: 85%;
-	font-family:"Arial Black", Gadget, sans-serif;
-	font-size:24px;
-	z-index: -1;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	border-radius: 10px; 
-	-khtml-border-radius: 10px; 
-	}
-
-#section5 { 
-	background-color: #f6c56d;
-	color: #000;
-	position: relative;
-	top: 500px;
-	height: 500px;
-	width: 85%;
-	font-family:"Arial Black", Gadget, sans-serif;
-	font-size:24px;
-	z-index: -1;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	border-radius: 10px; 
-	-khtml-border-radius: 10px; 
-	}
-
-#section6 { 
-	background-color: #7D20C1;
-	color: #000;
-	position: relative;
-	top: 600px;
-	height: 500px;
-	width: 85%;
-	font-family:"Arial Black", Gadget, sans-serif;
-	font-size:24px;
-	z-index: -1;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	border-radius: 10px; 
-	-khtml-border-radius: 10px; 
-	}
-
-#footer { 
-	background-color: #929292;
-	color: #000;
-	position: relative;
-	top: 650px;
-	height: 50px;
+.wrap {
 	width: 100%;
-	font-family:"Arial Black", Gadget, sans-serif;
-	font-size:24px;
-	z-index: -1;
+	max-width: 1600px;
+	min-width: 960px;
+	z-index: 10;
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
 
-	}
+}
+
+
+
+.section {
+	width: 100%;
+	max-width: 1600px;
+	min-width: 960px;
+	z-index: 10;
+	position: relative;
+	margin: 0 auto;
+	padding: 0 0 20px 0;
+	height: 800px;
+}
+
+
+.inner {
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+	min-height: 50px;
+	padding:30px 0;
+	font-size: 18px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+
+.inner:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+}
+
+
+.subMenu {
+	height: 50px;
+	z-index: 1000;
+	width: 100%;
+	background: #424260;
+}
+
+.subMenu .inner {
+	padding:0;
+	font-weight: 400;
+	margin: 0 auto;
+}
+
+
+.subNavBtn {
+	display: block;
+	height: 35px;
+	width: 10%;
+	float: left;
+	margin: 0px 0px 0 0;
+	text-decoration: none;
+	font-size: 14px;
+	padding: 15px 2% 0 2%;
+	text-align: center;
+	
+	color: #ffd700;
+}
+.subMenu a:hover {
+	background: #1783c7;
+
+}
+
+.active {
+	background: #25aae1;
+	color: #fff;
+}
+.end {
+	margin: 0;
+}
+
+
+
+
+/* SECTIONS */
+.sTop {
+	min-height: 130px;
+	background:#424260;
+	color:#000;
+	padding: 50px 0;
+	height: 430px;
+	
+}
+
+.s1 {
+	background:#184764;
+	color:#fff;
+	
+}
+
+
+.s2 {
+	background: #19194a;
+}
+.s2 a {
+	color: #fff;
+}
+
+.s3 {
+	background: #1b83b3;
+}
+
+
+.s4 {
+	background: #5aa3c4;
+}
+
+
+
+.s5 {
+	background: #bce1f1;
+	color: #3d3d3d;
+}
+
+.s6 {
+	background: #161616;
+}
+
+
+
+
+

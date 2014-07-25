@@ -1,0 +1,553 @@
+.ch-item {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	position: relative;
+	cursor: default;
+	-webkit-perspective: 900px;
+	-moz-perspective: 900px;
+	-o-perspective: 900px;
+	-ms-perspective: 900px;
+	perspective: 900px;
+}
+.ch-info{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+.ch-info > div {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-position: center center;
+	-webkit-transition: all 0.4s linear;
+	-moz-transition: all 0.4s linear;
+	-o-transition: all 0.4s linear;
+	-ms-transition: all 0.4s linear;
+	transition: all 0.4s linear;
+	-webkit-transform-origin: 50% 0%;
+	-moz-transform-origin: 50% 0%;
+	-o-transform-origin: 50% 0%;
+	-ms-transform-origin: 50% 0%;
+	transform-origin: 50% 0%;
+}
+
+.ch-info .ch-info-front {
+}
+
+.ch-info .ch-info-back {
+	-webkit-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
+	-moz-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
+	-o-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
+	-ms-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
+	transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
+	background: #000;
+	opacity: 0;
+}
+
+.ch-img-1 { 
+	background-image: url(../images/pl/ajax.jpg);
+}
+
+.ch-img-2 { 
+	background-image: url(../images/pl/android.jpg);
+}
+
+.ch-img-3 { 
+	background-image: url(../images/pl/js.jpg);
+}
+
+.ch-img-4 { 
+	background-image: url(../images/pl/oracle.jpg);
+}
+
+.ch-img-5 { 
+	background-image: url(../images/pl/php.jpg);
+}
+
+.ch-img-6 { 
+	background-image: url(../images/pl/postgre.png);
+}
+
+.ch-img-7 { 
+	background-image: url(../images/pl/python.jpg);
+}
+
+.ch-img-8 { 
+	background-image: url(../images/pl/rails.jpg);
+}
+
+.ch-img-9 { 
+	background-image: url(../images/pl/ruby.jpg);
+}
+
+.ch-img-10 { 
+	background-image: url(../images/pl/sqlite.jpg);
+}
+
+.ch-img-11 { 
+	background-image: url(../images/pl/vb6.jpg);
+}
+
+.ch-img-12 { 
+	background-image: url(../images/pl/vbnet.png);
+}
+
+.ch-img-13 { 
+	background-image: url(../images/contact/fb.png);
+}
+
+.ch-img-14 { 
+	background-image: url(../images/contact/github.jpg);
+}
+
+.ch-img-15 { 
+	background-image: url(../images/contact/gmail.jpg);
+}
+
+.ch-img-16 { 
+	background-image: url(../images/contact/skype.png);
+}
+.ch-img-17 { 
+	background-image: url(../images/contact/twitter.jpg);
+}
+
+.ch-info h3 {
+	color: #fff;
+	font-size: 20px;
+	margin: 0 15px;
+	padding: 45px 0 0 0;
+	height: 110px;
+	font-family: 'Open Sans', Arial, sans-serif;
+	text-shadow: 
+		0 0 1px #fff, 
+		0 1px 2px rgba(0,0,0,0.3);
+}
+
+.ch-info p {
+	color: #fff;
+	padding: 10px 5px;
+	font-style: italic;
+	margin-top: 70px;
+	font-size: 12px;
+}
+
+.ch-info p a {
+	display: block;
+	color: #fff;
+	color: rgba(255,255,255,0.7);
+	font-style: normal;
+	font-weight: 700;
+	font-size: 9px;
+	letter-spacing: 1px;
+	padding-top: 4px;
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.ch-info p a:hover {
+	color: #fff222;
+	color: rgba(255,242,34, 0.8);
+}
+
+.ch-item:hover .ch-info-front {
+	-webkit-transform: translate3d(0,280px,0) rotate3d(1,0,0,-90deg);
+	-moz-transform: translate3d(0,280px,0) rotate3d(1,0,0,-90deg);
+	-o-transform: translate3d(0,280px,0) rotate3d(1,0,0,-90deg);
+	-ms-transform: translate3d(0,280px,0) rotate3d(1,0,0,-90deg);
+	transform: translate3d(0,280px,0) rotate3d(1,0,0,-90deg);
+	opacity: 0;
+}
+
+.ch-item:hover .ch-info-back {
+	-webkit-transform: rotate3d(1,0,0,0deg);
+	-moz-transform: rotate3d(1,0,0,0deg);
+	-o-transform: rotate3d(1,0,0,0deg);
+	-ms-transform: rotate3d(1,0,0,0deg);
+	transform: rotate3d(1,0,0,0deg);
+	opacity: 1;
+}
+.ch-grid {
+	margin: 20px 0 0 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+.ch-grid:after,
+.ch-item:before {
+	content: '';
+    display: table;
+}
+
+.ch-grid:after {
+	clear: both;
+}
+
+.ch-grid li {
+	width: 175px;
+	height: 175px;
+	display: inline-block;
+	margin: 20px;
+}
+/** /!!! core css Should not edit !!!/**/
+
+
+.csSlideOuter {
+	overflow: hidden;
+}
+.lightSlider:before, .lightSlider:after {
+	content: " ";
+	display: table;
+}
+.csSlideWrapper > .lightSlider:after {
+	clear: both;
+}
+.csSlideWrapper .csSlide {
+	-webkit-transform: translate(0px, 0px);
+	-ms-transform: translate(0px, 0px);
+	transform: translate(0px, 0px);
+	-webkit-transition: all 1s;
+	transition: all 1s;
+	-webkit-transition-duration: inherit;
+	transition-duration: inherit;
+	-webkit-transition-timing-function: inherit;
+	transition-timing-function: inherit;
+}
+.csSlideWrapper .csFade {
+	position: relative;
+}
+.csSlideWrapper .csFade > * {
+	position: absolute !important;
+	top: 0;
+	left: 0;
+	z-index: 9;
+	margin-right: 0;
+	width: 100%;
+}
+.csSlideWrapper.usingCss .csFade > * {
+	opacity: 0;
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+	-webkit-transition-duration: inherit;
+	transition-duration: inherit;
+	-webkit-transition-property: opacity;
+	transition-property: opacity;
+	-webkit-transition-timing-function: inherit;
+	transition-timing-function: inherit;
+}
+.csSlideWrapper .csFade > *.active {
+	z-index: 10;
+}
+.csSlideWrapper.usingCss .csFade > *.active {
+	opacity: 1;
+}
+/** /!!! End of core css Should not edit !!!/**/
+
+/* Pager */
+.csSlideOuter .csPager.cSpg {
+	margin: 10px 0 0;
+	padding: 0;
+	text-align: center;
+}
+.csSlideOuter .csPager.cSpg > li {
+	cursor: pointer;
+	display: inline-block;
+	padding: 0 5px;
+}
+.csSlideOuter .csPager.cSpg > li a {
+	background-color: #222222;
+	border-radius: 30px;
+	display: inline-block;
+	height: 8px;
+	overflow: hidden;
+	text-indent: -999em;
+	width: 8px;
+	position: relative;
+	z-index: 99;
+	-webkit-transition: all 0.5s linear 0s;
+	transition: all 0.5s linear 0s;
+}
+.csSlideOuter .csPager.cSpg > li:hover a, .csSlideOuter .csPager.cSpg > li.active a {
+	background-color: #428bca;
+}
+.csSlideOuter .media {
+	opacity: 0.8;
+}
+.csSlideOuter .media.active {
+	opacity: 1;
+}
+/* End of pager */
+
+/** Gallery */
+.csSlideOuter .csPager.cSGallery {
+	list-style: none outside none;
+	padding-left: 0;
+	margin: 0;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.csSlideOuter .csPager.cSGallery li {
+	opacity: 0.7;
+	-webkit-transition: opacity 0.35s linear 0s;
+	transition: opacity 0.35s linear 0s;
+}
+.csSlideOuter .csPager.cSGallery li.active, .csSlideOuter .csPager.cSGallery li:hover {
+	opacity: 1;
+}
+.csSlideOuter .csPager.cSGallery img {
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+.csSlideOuter .csPager.cSGallery:before, .csSlideOuter .csPager.cSGallery:after {
+	content: " ";
+	display: table;
+}
+.csSlideOuter .csPager.cSGallery:after {
+	clear: both;
+}
+/* End of Gallery*/
+
+/* slider actions */
+.csAction > a {
+	width: 32px;
+	display: block;
+	top: 50%;
+	height: 32px;
+	background-image: url('../img/controls.png');
+	cursor: pointer;
+	position: absolute;
+	z-index: 99;
+	margin-top: -16px;
+	opacity: 0.5;
+	-webkit-transition: opacity 0.35s linear 0s;
+	transition: opacity 0.35s linear 0s;
+}
+.csAction > a:hover {
+	opacity: 1;
+}
+.csAction > .csPrev {
+	background-position: 0 0;
+	left: 10px;
+}
+.csAction > .csNext {
+	background-position: -32px 0;
+	right: 10px;
+}
+.cS-hidden {
+	height: 1px;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	overflow: hidden;
+}
+/* line 5, /home/iamcheche/railsapps/iamcheche/app/assets/stylesheets/welcome.css.scss */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+/* line 8, /home/iamcheche/railsapps/iamcheche/app/assets/stylesheets/welcome.css.scss */
+body {
+  font-family: Helvetica, Arial, Verdana, sans-serif;
+  color: #e5e5e5;
+  font-size: 12px;
+  background: #bfbfbf;
+}
+
+/* line 18, /home/iamcheche/railsapps/iamcheche/app/assets/stylesheets/welcome.css.scss */
+h1, h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  margin: 0 0 15px 0;
+}
+
+/* line 25, /home/iamcheche/railsapps/iamcheche/app/assets/stylesheets/welcome.css.scss */
+h1 {
+  font-size: 36px;
+  letter-spacing: -1px;
+  line-height: 100%;
+}
+
+/* line 32, /home/iamcheche/railsapps/iamcheche/app/assets/stylesheets/welcome.css.scss */
+h2 {
+  font-size: 24px;
+}
+
+/* line 37, /home/iamcheche/railsapps/iamcheche/app/assets/stylesheets/welcome.css.scss */
+p {
+  margin: 0 0 15px 0;
+}
+
+/* line 41, /home/iamcheche/railsapps/iamcheche/app/assets/stylesheets/welcome.css.scss */
+a {
+  color: #3e3e3e;
+}
+
+/* line 47, /home/iamcheche/railsapps/iamcheche/app/assets/stylesheets/welcome.css.scss */
+.clear {
+  clear: both;
+}
+
+/* line 50, /home/iamcheche/railsapps/iamcheche/app/assets/stylesheets/welcome.css.scss */
+.wrap {
+  width: 100%;
+  max-width: 1600px;
+  min-width: 960px;
+  z-index: 10;
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* line 63, /home/iamcheche/railsapps/iamcheche/app/assets/stylesheets/welcome.css.scss */
+.section {
+  width: 100%;
+  max-width: 1600px;
+  min-width: 960px;
+  z-index: 10;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 0 20px 0;
+  height: 800px;
+}
+
+/* line 75, /home/iamcheche/railsapps/iamcheche/app/assets/stylesheets/welcome.css.scss */
+.inner {
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+  min-height: 50px;
+  padding: 30px 0;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+/* line 86, /home/iamcheche/railsapps/iamcheche/app/assets/stylesheets/welcome.css.scss */
+.inner:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 93, /home/iamcheche/railsapps/iamcheche/app/assets/stylesheets/welcome.css.scss */
+.subMenu {
+  height: 50px;
+  z-index: 1000;
+  width: 100%;
+  background: #424260;
+}
+
+/* line 100, /home/iamcheche/railsapps/iamcheche/app/assets/stylesheets/welcome.css.scss */
+.subMenu .inner {
+  padding: 0;
+  font-weight: 400;
+  margin: 0 auto;
+}
+
+/* line 107, /home/iamcheche/railsapps/iamcheche/app/assets/stylesheets/welcome.css.scss */
+.subNavBtn {
+  display: block;
+  height: 35px;
+  width: 10%;
+  float: left;
+  margin: 0px 0px 0 0;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 15px 2% 0 2%;
+  text-align: center;
+  color: #ffd700;
+}
+
+/* line 120, /home/iamcheche/railsapps/iamcheche/app/assets/stylesheets/welcome.css.scss */
+.subMenu a:hover {
+  background: #1783c7;
+}
+
+/* line 125, /home/iamcheche/railsapps/iamcheche/app/assets/stylesheets/welcome.css.scss */
+.active {
+  background: #25aae1;
+  color: #fff;
+}
+
+/* line 129, /home/iamcheche/railsapps/iamcheche/app/assets/stylesheets/welcome.css.scss */
+.end {
+  margin: 0;
+}
+
+/* SECTIONS */
+/* line 137, /home/iamcheche/railsapps/iamcheche/app/assets/stylesheets/welcome.css.scss */
+.sTop {
+  min-height: 130px;
+  background: #424260;
+  color: #000;
+  padding: 50px 0;
+  height: 430px;
+}
+
+/* line 146, /home/iamcheche/railsapps/iamcheche/app/assets/stylesheets/welcome.css.scss */
+.s1 {
+  background: #184764;
+  color: #fff;
+}
+
+/* line 153, /home/iamcheche/railsapps/iamcheche/app/assets/stylesheets/welcome.css.scss */
+.s2 {
+  background: #19194a;
+}
+
+/* line 156, /home/iamcheche/railsapps/iamcheche/app/assets/stylesheets/welcome.css.scss */
+.s2 a {
+  color: #fff;
+}
+
+/* line 160, /home/iamcheche/railsapps/iamcheche/app/assets/stylesheets/welcome.css.scss */
+.s3 {
+  background: #1b83b3;
+}
+
+/* line 165, /home/iamcheche/railsapps/iamcheche/app/assets/stylesheets/welcome.css.scss */
+.s4 {
+  background: #5aa3c4;
+}
+
+/* line 171, /home/iamcheche/railsapps/iamcheche/app/assets/stylesheets/welcome.css.scss */
+.s5 {
+  background: #bce1f1;
+  color: #3d3d3d;
+}
+
+/* line 176, /home/iamcheche/railsapps/iamcheche/app/assets/stylesheets/welcome.css.scss */
+.s6 {
+  background: #161616;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+

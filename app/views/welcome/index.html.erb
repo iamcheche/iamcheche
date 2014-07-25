@@ -1,35 +1,57 @@
-<div class = "header">
-<%= render partial: 'layouts/header' %>
-</div>
-  	
-<center>
+<div class="wrap ">
+	<div class="section sTop">
+		<div class="inner">
+			<h1 class="title"><b>iamcheche</b> </h1>
+			<h2 class="subtitle">is a Google Searcher, Fast Learner,<br/> 
+				Code Probe, Student, Mentor.</h2>
+		</div>
+	</div>
+
+	<div class="subMenu" >
+	 	<div class="inner">
+	 		<a href="#sTop" class="subNavBtn">Home</a>
+	 		<a href="#s1" class="subNavBtn">About</a> 
+			<a href="#s2" class="subNavBtn">Knowledge</a>
+			<a href="#s3" class="subNavBtn">Achievements</a>
+			<a href="#s4" class="subNavBtn">Works</a>
+			<a href="#s5" class="subNavBtn">Contact</a>
+		</div>
+	</div>
+
+	<div class="section s1">
+		<div class="inner ">
+			<h2>A little about me...</h2>
+			<%= render partial: 'layouts/about' %>
+		</div>
+	</div>
+
+	<div class="section s2">
+		<div class="inner">
+			<h2>Knowledge that I'm aware I have...</h2>
+			<%= render partial: 'layouts/knowledge' %>
+		</div>
+	</div>
+
+
+
+	<div class="section s3">
+		<div class="inner">
+			<h2>I have achieve something in life...</h2>
+		</div> 	
+	</div>
+
+	<div class="section s4">
+		<div class="inner">
+			<h2>Don't go in here...</h2>
+		</div>
+	</div>
+
+	<div class="section s5">
+		<div class="inner">
+			<h2>You can contact me through...</h2>
+			<%= render partial: 'layouts/contact' %>
+		</div>
+	</div>
 
 	
-<div id = "section1">
-	<h3 align = right style="margin: 30px;">PROFILE</h3>
 </div>
-
-<div id = "section2">
-	<h3 align = right style="margin: 30px;">SKILLS</h3>
-</div>
-
-<div id = "section3">
-	<h3 align = right style="margin: 30px;">WORKS</h3>
-</div>
-
-<div id = "section4">
-	<h3 align = right style="margin: 30px;">SEMINARS</h3>
-</div>
-
-<div id = "section5">
-	<h3 align = right style="margin: 30px;">ACHIEVEMENTS</h3>
-</div>
-
-<div id = "section6">
-	<h3 align = right style="margin: 30px;">CONTACT</h3>
-</div>
-
-<div id = "footer">
-	<p>copyrught 2014</p>
-</div>
-</center>
