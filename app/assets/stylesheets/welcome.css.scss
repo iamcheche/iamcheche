@@ -1,0 +1,221 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  background-color: #f2f2f2;
+  color: #000;
+  font-family: arial-black, arial, helvetica, sans-serif;
+  line-height: 18px;
+}
+
+
+
+.header{
+height: 50px;
+width: 100%;
+color: #000;
+background-color: #929292;
+position: fixed;
+top: 0%;
+left: 0%;
+}
+
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a {
+	color: #000;
+  	text-decoration:none;
+  
+  	&:visited {
+    color: #000;
+  }
+}
+
+a:hover{
+  	color: #fff;
+  	-moz-transition:0.2s ease-in-out;
+	-o-transition:0.2s ease-in-out;
+	-webkit-transition:all 0.2s ease-in-out;
+ }
+
+div {
+	&.field, &.messages {
+	font-family: verdana, arial, helvetica, sans-serif;
+  	font-size: 10px;
+  	line-height: 18px;
+  	}
+}
+
+#menu, #menu ul {
+	margin: 0;
+  	padding: 0;
+  	list-style: none;
+}
+
+#left {
+  	width: 25%;
+  	height: 10%;
+  	margin: 0px 0px 10px auto;
+  	background-color: #929292;
+  	float:left;
+  	text-align: center;
+  	}
+
+#menu {
+  	width: 75%;
+  	height: 10%;
+  	margin: 0px auto;
+  	background-color: #929292;
+  	float:right;
+}
+
+
+#menu a {
+  	float: right;
+  	padding: 15px 20px;
+  	color: #000;
+  	text-transform: uppercase;
+  	font: bold 16px arial-black, Helvetica;
+  	text-decoration: none;
+}
+
+#menu li:hover > a {
+  	color: #fff;
+}
+
+img{
+	height:75px;
+	width:75px;
+	-moz-border-radius: 100%;
+	-webkit-border-radius: 100%;
+	border-radius: 100%; 
+	-khtml-border-radius: 100%; 
+	}
+
+#image {
+	position: fixed;
+	margin-left: 20px;
+	align:left;
+}
+
+
+#section1 { 
+	background-color: #ff6a6a;
+	color: #000;
+	position: relative;
+	top:50px;
+	height: 500px;
+	width: 85%;
+	font-family:"Arial Black", Gadget, sans-serif;
+	font-size:24px;
+	z-index: -1;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px; 
+	-khtml-border-radius: 10px; 
+
+	}
+
+#section2 { 
+	background-color: #86c986;
+	color: #000;
+	position: relative;
+	top: 200px;
+	height: 500px;
+	width: 85%;
+	font-family:"Arial Black", Gadget, sans-serif;
+	font-size:24px;
+	z-index: -1;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px; 
+	-khtml-border-radius: 10px; 
+	}
+
+#section3 { 
+	background-color: #87ceeb;
+	color: #000;
+	position: relative;
+	top: 300px;
+	height: 500px;
+	width: 85%;
+	font-family:"Arial Black", Gadget, sans-serif;
+	font-size:24px;
+	z-index: -1;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px; 
+	-khtml-border-radius: 10px; 
+	}
+
+#section4 { 
+	background-color: #f8f884;
+	color: #000;
+	position: relative;
+	top: 400px;
+	height: 500px;
+	width: 85%;
+	font-family:"Arial Black", Gadget, sans-serif;
+	font-size:24px;
+	z-index: -1;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px; 
+	-khtml-border-radius: 10px; 
+	}
+
+#section5 { 
+	background-color: #f6c56d;
+	color: #000;
+	position: relative;
+	top: 500px;
+	height: 500px;
+	width: 85%;
+	font-family:"Arial Black", Gadget, sans-serif;
+	font-size:24px;
+	z-index: -1;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px; 
+	-khtml-border-radius: 10px; 
+	}
+
+#section6 { 
+	background-color: #7D20C1;
+	color: #000;
+	position: relative;
+	top: 600px;
+	height: 500px;
+	width: 85%;
+	font-family:"Arial Black", Gadget, sans-serif;
+	font-size:24px;
+	z-index: -1;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px; 
+	-khtml-border-radius: 10px; 
+	}
+
+#footer { 
+	background-color: #929292;
+	color: #000;
+	position: relative;
+	top: 650px;
+	height: 50px;
+	width: 100%;
+	font-family:"Arial Black", Gadget, sans-serif;
+	font-size:24px;
+	z-index: -1;
+
+	}
